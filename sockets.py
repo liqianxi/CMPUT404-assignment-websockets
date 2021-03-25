@@ -186,7 +186,7 @@ def world():
         return response
     elif request.method == 'GET':
         response = app.response_class(
-            response=json.dumps(myWorld),
+            response=json.dumps(myWorld.world()),
             status=200,
             mimetype='application/json'
         )
